@@ -212,7 +212,9 @@
   }
 
   function changeProps(obj, fn) {
-    if (obj instanceof Array) {
+    if (!obj) {
+      return obj;
+    } else if (obj instanceof Array) {
       return _convertArray(obj, fn);
     } else if (_typeof(obj) === "object") {
       return _convertObject(obj, fn);

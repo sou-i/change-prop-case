@@ -24,7 +24,9 @@ function _convertArray(arr: Array<any>, fn: ConvertFunc): Array<any> {
 }
 
 export function changeProps(obj: any, fn: ConvertFunc) {
-  if (obj instanceof Array) {
+  if (!obj) {
+    return obj;
+  } else if (obj instanceof Array) {
     return _convertArray(obj, fn);
   } else if (typeof obj === "object") {
     return _convertObject(obj, fn);
