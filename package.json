@@ -18,6 +18,10 @@
     "email": "ishibashi@usa-mimi.jp"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sou-i/change-prop-case.git"
+  },
   "devDependencies": {
     "@babel/core": "7.4.3",
     "@babel/plugin-proposal-class-properties": "7.4.0",
